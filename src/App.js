@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./Components/Home";
+import Home from "./Components/Home/Home";
 import Restaurant from "./Components/Restaurant";
 import RestaurantMenu from "./Components/RestaurantMenu";
 import SearchFood from "./Components/SearchFood";
