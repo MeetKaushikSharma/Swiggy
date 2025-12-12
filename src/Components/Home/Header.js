@@ -18,14 +18,14 @@ export default function Header() {
             Partner with us
           </a>
           <a
-            className="border border-white py-3 px-4 rounded-2xl"
+            className="border-2 border-white py-3 px-4 rounded-2xl"
             target="blank"
             href="https://www.swiggy.com/corporate/"
           >
             Get the App ⇗
           </a>
           <a
-            className=" bg-black py-3 px-4 rounded-2xl"
+            className=" bg-black py-4 px-7 rounded-2xl"
             target="blank"
             href="https://www.swiggy.com/corporate/"
           >

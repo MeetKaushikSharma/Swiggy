@@ -3,7 +3,7 @@ export default function FoodCard({ foodData }) {
     <>
       <a href={foodData?.action.link}>
         <img
-          className="w-40 h-40 object-cover"
+          className="w-40 h-39 object-cover"
           src={
             "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/" +
             foodData?.imageId
