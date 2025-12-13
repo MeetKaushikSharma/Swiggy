@@ -1,7 +1,7 @@
 export default function Shimmer() {
   return (
     <>
-      <div className="flex flex-wrap w-[80%] mx-auto mt-10 gap-5">
+      <div className="flex flex-wrap w-[80%] mx-auto mt-25 gap-5">
         <div className="w-[280px] mb-2">
           <div className="w-full h-45 rounded-2xl bg-gray-300 animate-pulse"></div>
           <div className="w-[95%] mx-auto mt-2">

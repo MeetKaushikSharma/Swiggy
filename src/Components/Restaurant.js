@@ -21,14 +21,26 @@ export default function Restaurant() {
   }, []);
 
   if (RestData.length == 0) {
-    return <Shimmer></Shimmer>;
+    return (
+      <>
+        <p className="absolute left-42 font-bold text-2xl bottom-155">
+          Restaurants with online food delivery
+        </p>
+        <Shimmer></Shimmer>
+      </>
+    );
   }
 
   return (
-    <div className="flex flex-wrap w-[80%] mx-auto mt-10 gap-5">
-      {RestData.map((restInfo) => (
-        <RestCard key={restInfo?.info?.id} restInfo={restInfo} />
-      ))}
-    </div>
+    <>
+      <p className="absolute left-42 font-bold text-2xl bottom-155">
+        Restaurants with online food delivery
+      </p>
+      <div className="flex flex-wrap w-[80%] mt-25 ml-42 gap-5">
+        {RestData.map((restInfo) => (
+          <RestCard key={restInfo?.info?.id} restInfo={restInfo} />
+        ))}
+      </div>
+    </>
   );
 }

@@ -5,7 +5,7 @@ export default function RestCard({ restInfo }) {
     <Link to={"/city/delhi/" + restInfo?.info?.id}>
       <div className="max-w-[280px] mb-2 transition duration-200 hover:scale-95">
         <img
-          className="w-70 h-45 object-cover rounded-2xl"
+          className="w-70 h-45 object-cover rounded-xl drop-shadow-xl "
           src={
             "https://media-assets.swiggy.com/swiggy/image/upload/" +
             restInfo?.info?.cloudinaryImageId

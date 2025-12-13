@@ -8,6 +8,7 @@ export default function RestaurantMenu() {
   const [selected, setSelected] = useState(null);
 
   const [RestData, setRestData] = useState([]);
+  const [restname, setRestname] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -17,6 +18,7 @@ export default function RestaurantMenu() {
       const data = await response.json();
       const tempData =
         data?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+      setRestname(data?.data?.cards[0]?.card?.card?.text);
       const filterData = tempData.filter(
         (items) => "title" in items?.card?.card
       );
@@ -28,14 +30,17 @@ export default function RestaurantMenu() {
 
   return (
     <div>
-      <div className="w-[80%] mx-auto mt-20 mb-20">
+      <p className="absolute text-5xl font-bold ml-40 tracking-tight bottom-145">
+        {restname}
+      </p>
+      <div className="w-[80%] mx-auto mt-40 mb-20">
         <Link to={`/city/delhi/${id}/search`}>
           <p className="w-full text-center py-4 bg-gray-200">
             Search for Dishes
           </p>
         </Link>
       </div>
-      <div className="w-[80%] mx-auto mt-20 mb-20">
+      <div className="w-[80%] mx-auto mt-15 mb-20">
         <button
           className={`text-2xl py-2 px-8 mr-2 border rounded ${
             selected === "veg" ? "bg-green-500" : "bg-gray-300"

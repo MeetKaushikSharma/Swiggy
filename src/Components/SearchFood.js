@@ -25,12 +25,14 @@ export default function SearchFood() {
   }, []);
 
   return (
-    <div className="w-[80%] mx-auto mt-20">
-      <input
-        className="w-full pl-10 py-4 text-2xl bg-gray-200 rounded-xl border"
-        placeholder="Search here ..."
-        onChange={(e) => setFood(e.target.value)}
-      ></input>
-    </div>
+    <>
+      <div className="w-[80%] mx-auto mt-20">
+        <input
+          className="w-full pl-10 py-4 text-2xl bg-gray-200 rounded-xl border"
+          placeholder="Search here ..."
+          onChange={(e) => setFood(e.target.value)}
+        ></input>
+      </div>
+    </>
   );
 }
