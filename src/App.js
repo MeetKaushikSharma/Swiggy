@@ -5,7 +5,7 @@ import Restaurant from "./Components/Restaurant";
 import RestaurantMenu from "./Components/RestaurantMenu";
 import SearchFood from "./Components/SearchFood";
 import SecondaryHome from "./Components/SecondaryHome";
-import Checkout from "./Components/Checkout";
+import Checkout from "./Components/Checkout/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { store } from "./Stored/stores";
 import { Provider } from "react-redux";
