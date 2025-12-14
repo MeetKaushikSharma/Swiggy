@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./Components/Home/Home";
-import Restaurant from "./Components/Restaurant";
-import RestaurantMenu from "./Components/RestaurantMenu";
+import Restaurant from "./Components/Restaurant/Restaurant";
+import RestaurantMenu from "./Components/Restaurant Menu/RestaurantMenu";
 import SearchFood from "./Components/SearchFood";
 import SecondaryHome from "./Components/SecondaryHome";
 import Checkout from "./Components/Checkout/Checkout";

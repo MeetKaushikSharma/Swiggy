@@ -1,5 +1,5 @@
 import { GroceryGridCards } from "../../Utils/Grocery";
-import Grocerycard from "../Grocerycard";
+import Grocerycard from "./Grocerycard";
 
 export default function GroceryOption() {
   return (

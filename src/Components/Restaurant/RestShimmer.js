@@ -1,4 +1,4 @@
-export default function Shimmer() {
+export default function RestShimmer() {
   return (
     <>
       <div className="flex flex-wrap w-[80%] mx-auto mt-25 gap-5">

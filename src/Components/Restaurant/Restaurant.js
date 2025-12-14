@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import RestCard from "./RestCard";
-import Shimmer from "./Shimmer";
+import RestShimmer from "./RestShimmer";
 
 export default function Restaurant() {
   const [RestData, setRestData] = useState([]);
@@ -26,7 +26,7 @@ export default function Restaurant() {
         <p className="absolute left-42 font-bold text-2xl bottom-155">
           Restaurants with online food delivery
         </p>
-        <Shimmer></Shimmer>
+        <RestShimmer></RestShimmer>
       </>
     );
   }

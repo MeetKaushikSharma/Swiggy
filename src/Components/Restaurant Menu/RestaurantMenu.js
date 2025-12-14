@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import MenuCard from "./MenuCard";
 import { Link } from "react-router";
+import RestMenuShimmer from "./RestMenuShimmer";
 
 export default function RestaurantMenu() {
   let { id } = useParams();
@@ -27,6 +28,14 @@ export default function RestaurantMenu() {
 
     fetchData();
   }, []);
+
+  if (RestData.length == 0) {
+    return (
+      <>
+        <RestMenuShimmer></RestMenuShimmer>
+      </>
+    );
+  }
 
   return (
     <div>

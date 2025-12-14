@@ -1,5 +1,5 @@
 import DineData, { dineoutRestaurants } from "../../Utils/DineData";
-import DineCard from "../DineCard";
+import DineCard from "./DineCard";
 
 export default function DineOption() {
   return (

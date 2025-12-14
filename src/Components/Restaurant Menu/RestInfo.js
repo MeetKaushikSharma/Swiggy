@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { addItems, IncrementItems, DecrementItems } from "../Stored/CartSlicer";
+import {
+  addItems,
+  IncrementItems,
+  DecrementItems,
+} from "../../Stored/CartSlicer";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function RestInfo({ restData }) {
@@ -48,7 +52,7 @@ export default function RestInfo({ restData }) {
           ></img>
           {count === 0 ? (
             <button
-              className="absolute bottom-0 left-12 text-green-600 px-2 py-1 bg-white shadow-md border border-white rounded-xl"
+              className="absolute bottom-0 left-12 text-green-600 px-2 py-1 bg-white shadow-md border border-white rounded-xl hover:scale-105"
               onClick={() => handleAdditems()}
             >
               ADD
