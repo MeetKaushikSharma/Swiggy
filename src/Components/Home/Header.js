@@ -1,6 +1,6 @@
 // first div : swiggy logo + buttons
 
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (

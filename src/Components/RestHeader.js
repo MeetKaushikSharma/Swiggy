@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function RestHeader() {
   const counter = useSelector((state) => state.cartslice.count);
@@ -38,7 +38,7 @@ export default function RestHeader() {
           >
             Swiggy Corporate
           </a>
-          <Link to="/city/delhi/:id/search" className="hover:text-[#FF5200]">
+          <Link to="/search" className="hover:text-[#FF5200]">
             Search
           </Link>
           <a
@@ -59,7 +59,6 @@ export default function RestHeader() {
         </div>
       </div>
       <hr></hr>
-      
     </>
   );
 }

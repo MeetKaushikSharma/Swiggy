@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import CheckoutHeader from "./CheckoutHeader";
 import CheckoutCard from "./CheckoutCard";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Checkout() {
   const items = useSelector((state) => state.cartslice.items);
