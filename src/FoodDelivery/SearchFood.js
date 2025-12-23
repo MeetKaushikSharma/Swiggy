@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import RestInfo from "../Components/Restaurant Menu/RestInfo";
+import RestInfo from "./Restaurant Menu/RestInfo";
 
 export default function SearchFood() {
   const { id } = useParams();

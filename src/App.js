@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./Components/Home/Home";
-import Restaurant from "./Components/Restaurant/Restaurant";
-import RestaurantMenu from "./Components/Restaurant Menu/RestaurantMenu";
-import SearchFood from "./Components/SearchFood";
-import SecondaryHome from "./Components/SecondaryHome";
-import Checkout from "./Components/Checkout/Checkout";
+import Home from "./FoodDelivery/Home/Home";
+import Restaurant from "./FoodDelivery/Restaurant/Restaurant";
+import RestaurantMenu from "./FoodDelivery/Restaurant Menu/RestaurantMenu";
+import SearchFood from "./FoodDelivery/SearchFood";
+import SecondaryHome from "./FoodDelivery/SecondaryHome";
+import Checkout from "./FoodDelivery/Checkout/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { store } from "./Stored/stores";
 import { Provider } from "react-redux";
+import Instamart from "./Instamart/Instamart";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
             </Route>
 
             <Route path="/Checkout" element={<Checkout></Checkout>}></Route>
-            
+            <Route path="/instamart" element={<Instamart></Instamart>}></Route>
           </Routes>
         </BrowserRouter>
       </Provider>
