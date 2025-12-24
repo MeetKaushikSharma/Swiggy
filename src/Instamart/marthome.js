@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function MartHome() {
   return (
     <>
-      <div className="flex items-center gap-4 ml-25 py-2 px-2 mt-4 shadow-sm rounded-2xl fixed bg-gray-100">
+      <div className="flex items-center gap-4 ml-25 py-2 px-2 mt-4 shadow-sm rounded-2xl fixed bg-gray-100 z-10">
         <div className="flex items-center gap-2 relative">
           <img
             src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto//InstamartAssets/DWeb%20Changes/Instamart%20log.png"
