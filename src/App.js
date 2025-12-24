@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { store } from "./Stored/stores";
 import { Provider } from "react-redux";
 import Instamart from "./Instamart/Instamart";
+import Dineout from "./Dineout/Dineout";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 
             <Route path="/Checkout" element={<Checkout></Checkout>}></Route>
             <Route path="/instamart" element={<Instamart></Instamart>}></Route>
+            <Route path="/dineout" element={<Dineout></Dineout>}></Route>
           </Routes>
         </BrowserRouter>
       </Provider>

@@ -1,13 +1,16 @@
+
+
 export default function Instamart_Footer() {
   return (
     <>
-      <div className="mb-10">
+      <div className="mb-5">
+        
         <img
-          className="mb-10"
+          className="mb-5"
           src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png"
         ></img>
         <hr></hr>
-        <div className="flex mt-10 items-center gap-7">
+        <div className="flex mt-5 items-center gap-7">
           <p className="ml-24 text-3xl font-bold">
             For better experience, download the Swiggy app now
           </p>
