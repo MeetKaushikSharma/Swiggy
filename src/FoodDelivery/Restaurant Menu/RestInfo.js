@@ -18,7 +18,6 @@ export default function RestInfo({ restData }) {
   function handleAdditems() {
     dispatch(addItems(restData));
   }
-
   function handleIncrementItems() {
     dispatch(IncrementItems(restData));
   }

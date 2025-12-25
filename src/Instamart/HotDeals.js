@@ -22,10 +22,10 @@ export default function HotDeals() {
   return (
     <div className="w-full">
       <p className="relative left-42 top-30 text-xl font-bold">Hot Deals</p>
-      <div className="flex gap-10 flex-row overflow-scroll mt-35 ml-42 items-center w-[80%]">
+      <div className="flex h-120 gap-10 flex-row overflow-scroll mt-7 ml-42 items-center w-[80%]">
         {(hotdeals || []).map((hotDealsInfo) => (
           <HotDealsCard
-            key={hotDealsInfo?.displayName}
+            key={hotDealsInfo.variations[0].skuId}
             hotDealsInfo={hotDealsInfo}
           />
         ))}

@@ -8,6 +8,7 @@ export default function Grocery_and_KitchenCard({ Grocery_and_KitchenInfo }) {
           Grocery_and_KitchenInfo?.imageId
         }
       ></img>
+      <p></p>
     </>
   );
 }
